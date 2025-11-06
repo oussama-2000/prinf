@@ -6,7 +6,7 @@
 /*   By: oamkhou <oamkhou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 15:38:56 by oamkhou           #+#    #+#             */
-/*   Updated: 2025/11/05 20:57:32 by oamkhou          ###   ########.fr       */
+/*   Updated: 2025/11/06 22:37:10 by oamkhou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,7 @@ int ft_putptr(void *ptr)
     addr = (long)ptr;
     if(!addr)
         return (ft_putstr("(nil)"));
-    ft_putstr("0x");
-    count = 2;
+    count += ft_putstr("0x");
     count += ft_puthex(addr);
     return (count);
 

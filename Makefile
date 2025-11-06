@@ -1,4 +1,4 @@
-FILES = ft_putchar.c ft_putptr.c ft_putstr.c printf.c
+FILES = ft_putchar.c ft_putptr.c ft_putstr.c ft_printf.c ft_putnbr.c ft_puthexl.c ft_putunbr.c 
 OBJ = $(FILES:.c=.o)
 HEADER = printf.h 
 NAME = libftprintf.a

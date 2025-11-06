@@ -6,7 +6,7 @@
 /*   By: oamkhou <oamkhou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 15:42:41 by oamkhou           #+#    #+#             */
-/*   Updated: 2025/11/05 20:56:37 by oamkhou          ###   ########.fr       */
+/*   Updated: 2025/11/06 23:07:53 by oamkhou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int	ft_putstr(char *s)
 
     count = 0;
     i = 0;
+    if(!s)
+        return 0;
     while(s[i] != '\0')
     {
         count += write(1,&s[i],1);
