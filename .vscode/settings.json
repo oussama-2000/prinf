@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "algorithm": "c",
-        "format": "c",
-        "printf.h": "c"
-    }
-}

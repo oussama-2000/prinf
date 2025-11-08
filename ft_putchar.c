@@ -6,17 +6,17 @@
 /*   By: oamkhou <oamkhou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 15:39:34 by oamkhou           #+#    #+#             */
-/*   Updated: 2025/11/06 12:44:38 by oamkhou          ###   ########.fr       */
+/*   Updated: 2025/11/08 14:46:48 by oamkhou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
-int ft_putchar(char c)
+int	ft_putchar(char c)
 {
-    int count;
+	int	count;
 
-    count = 0;
-    count += write(1, &c, 1);
-    return (count);
+	count = 0;
+	count += write(1, &c, 1);
+	return (count);
 }
